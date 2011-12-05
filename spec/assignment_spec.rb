@@ -30,6 +30,8 @@ describe Assignment do
 
     context "when not given a User" do
       
+      subject { User.new }
+      
       #
       # Rails Model Objects automatically gain methods that provide a lot of functionality.
       # A model can be checked to see if it is valid? or invalid?
@@ -37,8 +39,8 @@ describe Assignment do
       # @see http://guides.rubyonrails.org/active_record_validations_callbacks.html#valid-and-invali
       #
       it "should not be a valid" do
-        
-        subject.should_not be_valid
+		subject.should_not be_valid
+		
         
       end
 

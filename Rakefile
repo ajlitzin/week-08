@@ -5,8 +5,8 @@ require 'logger'
 task :default => :migrate
 
 #
-# Uses ActiveRecord's migration functionality to perform a database migration with the specified
-# VERSION
+# Uses ActiveRecord's migration functionality to perform a database migration
+# with the specified VERSION
 #
 
 desc "Migrate the database through scripts in db/migrate. Target specific version with VERSION=x"
